@@ -1,0 +1,30 @@
+{
+  "name": "sum-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.15.2",
+    "bookshelf": "^0.10.3",
+    "cookie-parser": "~1.4.3",
+    "cookie-session": "^2.0.0-beta.1",
+    "cors": "^2.8.1",
+    "debug": "~2.2.0",
+    "dotenv": "^4.0.0",
+    "express": "~4.14.0",
+    "hbs": "~4.0.1",
+    "jsonwebtoken": "^7.3.0",
+    "jwt-simple": "^0.5.1",
+    "knex": "^0.12.7",
+    "moment": "^2.18.1",
+    "morgan": "~1.7.0",
+    "nodemailer": "^3.1.7",
+    "objection": "^0.7.5",
+    "pg": "^6.1.4",
+    "serve-favicon": "~2.3.0",
+    "uuid": "^3.0.1"
+  }
+}
