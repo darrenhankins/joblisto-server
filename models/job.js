@@ -20,7 +20,7 @@ class Job extends Model {
       },
       // Model: item has many groups
       // an item can have many groups
-      group: {
+      company: {
         // relation: Model.HasManyRelation,
         relation: Model.ManyToManyRelation,
         modelClass: __dirname + '/company',

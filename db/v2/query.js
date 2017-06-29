@@ -80,23 +80,28 @@ module.exports = {
                 console.log('Didn\'t create job');
             });
     },
-    getJobById: function(item_id) {
+    getJobById: function(job_id) {
         return Job
             .query()
             .findById(job_id)
             .eager('[company]');
         // .eager('[company, item_status.[friend], item_sell]');
-
     },
     updateJob: function(job_id, job) {
         return Job
             .query()
-            // .where('id', '=', friend.friend_id)
             .where('id', '=', job_id)
             .update({
                 name: job.name,
+                location: job.location,
+                contact: job.contact,
+                job_title: job.job_title,
+                description: job.description,
+                listing_url: job.listing_url,
                 image_url: job.image_url,
-                description: job.description
+                cover_letter: job.cover_letter
+                // applied: job.applied,
+                // emailed: job.emailed
             })
             .then(job => {
                 console.log(job instanceof job); // true
