@@ -9,7 +9,7 @@ var cors = require('cors');
 
 var dotenv = require("dotenv").config();
 
-var index = require('./routes/v1/index')
+var index = require('./routes/v2/index')
 var user = require('./routes/v2/user');
 var auth = require('./auth')
 
